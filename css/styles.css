@@ -24,6 +24,7 @@
 }
 
 .navbar .max-width {
+    max-width: 1400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,7 +51,7 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 20px;
     transition: color 0.3s ease;
 }
 
@@ -101,7 +102,23 @@
     font-weight: 500;
 
 }
+
 /* similar content styling */
+section {
+    padding: 100px 0;
+}
+
+.about, .edu, .skills {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content, .edu .edu-content,
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
 section .title {
     position: relative;
@@ -135,26 +152,11 @@ section .title::after {
     transform: translateX(-50%);
 }
 
-.about .title::after{
+.about .title::after {
     content: "who i am";
 }
 
 /* about styling*/
-section {
-    padding: 100px 0;
-}
-
-.about, .edu {
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .about-content, .edu .edu-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .about .about-content .left {
     width: 45%;
 }
@@ -205,18 +207,21 @@ section {
 }
 
 /* education section begins here */
-.edu{
+.edu {
     color: white;
     background: black;
 }
-.edu .title::before{
+
+.edu .title::before {
     background: white;
 }
-.edu .title::after{
+
+.edu .title::after {
     background: black;
     content: "my education";
 }
-.edu .edu-content .card{
+
+.edu .edu-content .card {
     width: calc(44% - 20px);
     background: #222;
     text-align: center;
@@ -224,42 +229,124 @@ section {
     padding: 20px 25px;
     cursor: pointer;
 }
-.edu .edu-content .card:hover{
+
+.edu .edu-content .card:hover {
     background: crimson;
 }
-.edu .edu-content .card .box{
+
+.edu .edu-content .card .box {
     transition: all 0.3s ease;
 }
-.edu .edu-content .card .box:hover{
+
+.edu .edu-content .card .box:hover {
     transform: scale(1.05);
 }
-.edu .edu-content .card i{
+
+.edu .edu-content .card i {
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.edu .edu-content .card:hover i{
+
+.edu .edu-content .card:hover i {
     color: white;
 }
-.edu .edu-content .card .text{
+
+.edu .edu-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.edu .edu-content .card span{
+
+.edu .edu-content .card span {
     font-size: 20px;
     font-weight: 500;
     color: crimson;
     margin: 10px 0 7px 0;
 }
-.edu .edu-content .card:hover span{
+
+.edu .edu-content .card:hover span {
     color: white;
 }
-.edu .edu-content .card p{
+
+.edu .edu-content .card p {
     font-size: 15px;
     font-weight: 400;
     margin: 10px 0 7px 0;
 }
+
+/* skill similar left and right styling */
+
+.skills .skills-content .left .bars,
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .left .info,
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .left span,
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .left .line,
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .left .line::before,
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+/* skills section styling */
+.skills .title::after {
+    content: "what i know";
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills-content .left .html::before {
+    width: 70%;
+}
+
+.skills-content .left .css::before {
+    width: 90%;
+}
+
+.skills-content .left .js::before {
+    width: 75%;
+}
+
+.skills-content .right .react::before {
+    width: 90%;
+}
+
+.skills-content .right .boot::before {
+    width: 80%;
+}
+
+.skills-content .right .java::before {
+    width: 85%;
+}
+
 /* responsive media query start */
 @media (max-width: 1330px) {
     .home .max-width {
@@ -348,13 +435,17 @@ section {
         margin: 0 auto 60px;
     }
 
-    .about .about-content .right{
+    .about .about-content .right {
         flex: 100%;
     }
 
-    .edu .edu-content .card{
+    .edu .edu-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column {
+        width: 100%;
     }
 }
 
@@ -370,7 +461,8 @@ section {
     .home .home-content .text-3 {
         font-size: 32px;
     }
-    .edu .edu-content .card{
+
+    .edu .edu-content .card, .skills .skills-content .column {
         width: 100%;
     }
 }
