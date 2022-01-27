@@ -108,12 +108,13 @@ section {
     padding: 100px 0;
 }
 
-.about, .edu, .skills {
+.about, .edu, .skills, .exp {
     font-family: 'Poppins', sans-serif;
 }
 
 .about .about-content, .edu .edu-content,
-.skills .skills-content {
+.skills .skills-content,
+.exp .exp-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -207,12 +208,13 @@ section .title::after {
 }
 
 /* education section begins here */
-.edu {
+.edu, .exp {
     color: white;
     background: black;
 }
 
-.edu .title::before {
+.edu .title::before,
+.exp .title::before {
     background: white;
 }
 
@@ -335,6 +337,10 @@ section .title::after {
     width: 75%;
 }
 
+.skills-content .left .scrum::before {
+    width: 90%;
+}
+
 .skills-content .right .react::before {
     width: 90%;
 }
@@ -347,10 +353,49 @@ section .title::after {
     width: 85%;
 }
 
+.skills-content .right .db::before {
+    width: 75%;
+}
+
+/* experience styling */
+.exp .title::after {
+    background: black;
+    content: "what i do";
+}
+
+.exp .exp-content .info {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.exp .exp-content .info .date {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 10px 7px 30px;
+}
+
+.exp .exp-content .info .company {
+    font-size: 20px;
+    font-weight: 600;
+    color: crimson;
+    margin: 10px 10px 7px 30px;
+}
+
+.exp .exp-content .info .list-styled {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 10px 7px 40px;
+    text-align: justify;
+}
+
 /* responsive media query start */
 @media (max-width: 1330px) {
     .home .max-width {
         margin-left: 0px;
+    }
+
+    .exp .exp-content .info {
+        flex: 100%;
     }
 }
 
@@ -358,6 +403,10 @@ section .title::after {
     .about .about-content .left img {
         height: 350px;
         width: 350px;
+    }
+
+    .exp .exp-content .info {
+        flex: 100%;
     }
 }
 
@@ -447,6 +496,10 @@ section .title::after {
     .skills .skills-content .column {
         width: 100%;
     }
+
+    .exp .exp-content .info {
+        flex: 100%;
+    }
 }
 
 @media (max-width: 690px) {
@@ -465,6 +518,10 @@ section .title::after {
     .edu .edu-content .card, .skills .skills-content .column {
         width: 100%;
     }
+
+    .exp .exp-content .info {
+        flex: 100%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -474,5 +531,9 @@ section .title::after {
 
     .home .home-content .text-3 {
         font-size: 27px;
+    }
+
+    .exp .exp-content .info {
+        width: 100%;
     }
 }
