@@ -108,7 +108,7 @@ section {
     padding: 100px 0;
 }
 
-.about, .edu, .skills, .exp, .contact {
+.about, .edu, .skills, .exp, .contact, footer {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -279,44 +279,6 @@ section .title::after {
     margin: 10px 0 7px 0;
 }
 
-/* contact section */
-.contact .title::after {
-    content: "Lets talk tech";
-}
-
-.contact .contact-content .card {
-    width: calc(20% - 1px);
-    background: #222;
-    text-align: center;
-    border-radius: 8px;
-    padding: 20px 25px;
-    cursor: pointer;
-    height: 170px;
-}
-
-.contact .contact-content .card i {
-    font-size: 45px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-
-.contact .contact-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color: white;
-}
-
-.contact .contact-content .card a {
-    font-size: 15px;
-    font-weight: 500;
-    color: crimson;
-}
-
-.contact .contact-content .card:hover a {
-    color: dodgerblue;
-}
-
 /* skill similar left and right styling */
 
 .skills .skills-content .left .bars,
@@ -428,6 +390,61 @@ section .title::after {
     text-align: justify;
 }
 
+
+/* contact section */
+.contact .title::after {
+    content: "Lets talk tech";
+}
+
+.contact .contact-content .card {
+    width: calc(20% - 1px);
+    background: #222;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px 25px;
+    cursor: pointer;
+    height: 170px;
+}
+
+.contact .contact-content .card i {
+    font-size: 45px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.contact .contact-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: white;
+}
+
+.contact .contact-content .card a {
+    font-size: 15px;
+    font-weight: 500;
+    color: crimson;
+}
+
+.contact .contact-content .card:hover a {
+    color: dodgerblue;
+}
+/* footer styling */
+footer{
+    background: black;
+    padding: 20px 23px;
+    color: white;
+    text-align: center;
+}
+footer span{
+    font-size: 15px;
+}
+footer .text{
+    color: crimson;
+    font-size: 15px;
+}
+footer i{
+    color: crimson;
+}
 /* responsive media query start */
 @media (max-width: 1330px) {
     .home .max-width {
