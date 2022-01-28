@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* navbar styling */
 .navbar {
     position: fixed;
@@ -48,6 +52,7 @@
 }
 
 .navbar .menu li a {
+    display: block;
     color: white;
     font-size: 18px;
     font-weight: 500;
@@ -162,6 +167,10 @@ section .title::after {
 
 .about .about-content .left {
     width: 45%;
+}
+
+.about .about-content .typing2 {
+    font-weight: 700;
 }
 
 .about .about-content .left img {
@@ -390,7 +399,6 @@ section .title::after {
     text-align: justify;
 }
 
-
 /* contact section */
 .contact .title::after {
     content: "Lets talk tech";
@@ -428,23 +436,28 @@ section .title::after {
 .contact .contact-content .card:hover a {
     color: dodgerblue;
 }
+
 /* footer styling */
-footer{
+footer {
     background: black;
     padding: 20px 23px;
     color: white;
     text-align: center;
 }
-footer span{
+
+footer span {
     font-size: 15px;
 }
-footer .text{
+
+footer .text {
     color: crimson;
     font-size: 15px;
 }
-footer i{
+
+footer i {
     color: crimson;
 }
+
 /* responsive media query start */
 @media (max-width: 1330px) {
     .home .max-width {
@@ -562,6 +575,7 @@ footer i{
     .exp .exp-content .info {
         flex: 100%;
     }
+
     .contact .contact-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -588,6 +602,7 @@ footer i{
     .exp .exp-content .info {
         flex: 100%;
     }
+
     .contact .contact-content .card {
         flex: 100%;
         margin-bottom: 20px;
@@ -606,8 +621,9 @@ footer i{
     .exp .exp-content .info {
         width: 100%;
     }
+
     .contact .contact-content .card {
-       flex: 100%;
+        flex: 100%;
         margin-bottom: 20px;
     }
 }
