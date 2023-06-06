@@ -344,6 +344,10 @@ section .title::after {
     width: 90%;
 }
 
+.skills-content .left .go::before {
+    width: 70%;
+}
+
 .skills-content .left .js::before {
     width: 75%;
 }
@@ -362,6 +366,10 @@ section .title::after {
 
 .skills-content .right .java::before {
     width: 85%;
+}
+
+.skills-content .right .dock::before {
+    width: 70%;
 }
 
 .skills-content .right .db::before {
