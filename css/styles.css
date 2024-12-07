@@ -165,23 +165,23 @@ section .title::after {
     content: "who i am";
 }
 
-.about .about-content .left {
-    width: 45%;
+.about .about-content .column-left {
+    width: 30%;
 }
 
 .about .about-content .typing2 {
     font-weight: 700;
 }
 
-.about .about-content .left img {
-    height: 300px;
-    width: 200px;
+.about .about-content .column-left img {
+    height: 500px;
+    width: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
 
 .about .about-content .right {
-    width: 55%;
+    width: 70%;
 }
 
 .about .about-content .right .text {
