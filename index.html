@@ -388,6 +388,16 @@
         <span>Created with <i class="fas fa-heart fa-spin"></i> by <span class="text">Priyanka</span></span>
     </footer>
     <script src="scripts/script.js"></script>
+    <p>Visitors so far: <span id="visitors"></span></p>
+
+    <script>
+      fetch('https://api.countapi.xyz/update/piabirajdar-github-io/visits/?amount=1')
+        .then(res => res.json())
+        .then(res => {
+          document.getElementById('visitors').innerText = res.value;
+        });
+    </script>
+
 </body>
 
 </html>
