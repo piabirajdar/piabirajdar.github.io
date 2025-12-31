@@ -20,6 +20,30 @@ html {
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
 }
+.certifications-box {
+    background: #111;
+    border-left: 4px solid #00C9A7; /* highlight color */
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.certifications-box h3 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    font-size: 22px;
+    color: #00C9A7;
+}
+
+.certifications-box a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.certifications-box a:hover {
+    text-decoration: underline;
+}
 
 .max-width {
     max-width: 1300px;
