@@ -20,9 +20,10 @@ html {
     padding: 15px 0;
     font-family: 'Ubuntu', sans-serif;
 }
+/* Certifications styling */
 .certifications-box {
     background: #111;
-    border-left: 4px solid #00C9A7; /* highlight color */
+    border-left: 4px solid crimson; /* changed to crimson */
     padding: 15px 20px;
     margin-bottom: 30px;
     border-radius: 6px;
@@ -32,17 +33,20 @@ html {
     margin: 0 0 10px 0;
     font-weight: 600;
     font-size: 22px;
-    color: #00C9A7;
+    color: crimson; /* changed to crimson */
 }
 
-.certifications-box a {
-    color: #fff;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.certifications-box a:hover {
+.cert-link {
+    color: #00E8FF;
+    font-weight: 600;
     text-decoration: underline;
+    font-size: 18px;
+    transition: 0.25s ease;
+}
+
+.cert-link:hover {
+    color: #FFD369;
+    text-decoration: none;
 }
 
 .max-width {
